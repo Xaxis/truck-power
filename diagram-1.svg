@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+    <rect x="0" y="0" width="900" height="500" fill="#fff" stroke="#000" stroke-width="1"/>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+        </marker>
+    </defs>
+
+    <!-- Solar Panels -->
+    <rect x="20" y="30" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="70" y="60" text-anchor="middle" font-size="14">Solar Panels</text>
+
+    <!-- Charge Controller -->
+    <rect x="150" y="30" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="200" y="60" text-anchor="middle" font-size="14">Charge Controller</text>
+
+    <!-- AGM Battery -->
+    <rect x="280" y="30" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="330" y="60" text-anchor="middle" font-size="14">AGM Battery</text>
+
+    <!-- Inverter -->
+    <rect x="410" y="30" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="460" y="60" text-anchor="middle" font-size="14">Inverter</text>
+
+    <!-- Vehicle Alternator -->
+    <rect x="540" y="230" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="590" y="260" text-anchor="middle" font-size="14">Vehicle Alternator</text>
+
+    <!-- Battery Isolator -->
+    <rect x="670" y="230" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="720" y="260" text-anchor="middle" font-size="14">Battery Isolator</text>
+
+    <!-- Lead Acid Battery -->
+    <rect x="800" y="230" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="850" y="260" text-anchor="middle" font-size="14">Lead Acid Battery</text>
+
+    <!-- Lane Switch 1 -->
+    <rect x="80" y="200" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="130" y="230" text-anchor="middle" font-size="14">Lane Switch 1</text>
+
+    <!-- Lane Switch 2 -->
+    <rect x="350" y="400" width="100" height="60" rx="5" stroke="black" stroke-width="2" fill="none"/>
+    <text x="400" y="430" text-anchor="middle" font-size="14">Lane Switch 2</text>
+
+    <!-- Solar Panels to Charge Controller -->
+    <path d="M70,60 L150,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Charge Controller to AGM Battery -->
+    <path d="M250,60 L280,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- AGM Battery to Inverter -->
+    <path d="M380,60 L410,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Inverter to Accessory Circuit -->
+    <path d="M460,90 L460,150" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Accessory Circuit to Lane Switch 1 -->
+    <path d="M460,150 L130,230" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 1 to Starter/Ignition Circuit -->
+    <path d="M180,200 L180,150" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Solar Panels to Lane Switch 2 -->
+    <path d="M70,60 L70,350 L400,350" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 2 to Solar Battery Charger -->
+    <path d="M400,380 L350,380 L350,350" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Solar Battery Charger to Lane Switch 2 -->
+    <path d="M250,350 L250,380 L400,380" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 2 to Accessory Circuit -->
+    <path d="M400,350 L460,350 L460,90" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Starter/Ignition Circuit to Lane Switch 2 -->
+    <path d="M180,150 L180,350 L400,350" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 2 to Lead Acid Battery -->
+    <path d="M460,380 L670,380 L670,260" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lead Acid Battery to Lane Switch 2 -->
+    <path d="M670,260 L460,260 L460,350" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 2 to Vehicle Alternator -->
+    <path d="M460,380 L540,380 L540,260" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Vehicle Alternator to Battery Isolator -->
+    <path d="M590,260 L590,230" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Battery Isolator to Lead Acid Battery -->
+    <path d="M670,260 L670,230" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Battery Isolator to Lane Switch 2 -->
+    <path d="M670,260 L460,260 L460,380" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 2 to Solar Panels -->
+    <path d="M460,350 L70,350 L70,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Lane Switch 1 to Solar Panels -->
+    <path d="M130,230 L70,230 L70,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Solar Panels to Solar Battery Charger -->
+    <path d="M70,60 L100,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Solar Battery Charger to Solar Battery -->
+    <path d="M350,350 L380,350" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Solar Battery to Inverter -->
+    <path d="M410,60 L440,60" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+</svg>
